@@ -526,10 +526,10 @@ const game = {
                     document.getElementById('game-container').style.display = 'none';
                     // Save the data in session storage
                     console.log('Saving to session storage:');
-                    sessionStorage.setItem('PRL1taskData', trialsDataJson);
+                    sessionStorage.setItem('PRL3taskData', trialsDataJson);
                     //send data as Message for labjswrapper to nab in event listener
                     window.postMessage({
-                        type: 'PRL1labjs.data', 
+                        type: 'PRL3labjs.data', 
                         type: 'labjs.data',
                         json: trialsDataJson
                     }, '*');
